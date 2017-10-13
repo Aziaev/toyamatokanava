@@ -1383,7 +1383,8 @@ var apiUrl = exports.apiUrl = 'https://api.foursquare.com/v2/venues/search?v=201
 
 // Innopolis
 // export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
-var kmlUrl = exports.kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
+var kmlUrl = exports.kmlUrl = 'http://93.170.123.58:8090/kml/cta.kml';
 var defaultCenter = exports.defaultCenter = { "lat": 55.751586659952075, "lng": 48.744511084655784 };
 var defaultZoom = exports.defaultZoom = 15;
 
@@ -1392,8 +1393,14 @@ var defaultZoom = exports.defaultZoom = 15;
 // export const defaultCenter = {"lat":41.83513710922671,"lng":-87.60401777734377};
 // export const defaultZoom = 9;
 
+// Settings
 var appName = exports.appName = 'toyamatokanava';
-var streetViewControl = exports.streetViewControl = false;
+var disableDefaultUI = exports.disableDefaultUI = true;
+var mapOptions = exports.mapOptions = {
+    streetViewControl: false,
+    fullscreenControl: false,
+    mapTypeControl: false
+};
 
 /***/ }),
 /* 37 */
@@ -28095,10 +28102,6 @@ var _superagent2 = _interopRequireDefault(_superagent);
 
 var _index = __webpack_require__(36);
 
-var _Places = __webpack_require__(398);
-
-var _Places2 = _interopRequireDefault(_Places);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28109,14 +28112,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var style = {
     container: {
-        padding: '0px 64px 32px 260px'
+        padding: '0px 64px 0px 260px'
+    },
+    mapContainer: {
+        padding: '0px 64px 0px 260px'
     },
     subheader: {
         marginBottom: 12
     },
     paragraph: {
         fontSize: 16,
-        marginBottom: 6
+        marginBottom: 10
     }
 };
 
@@ -28151,7 +28157,7 @@ var Home = function (_Component) {
     }, {
         key: "render",
         value: function render() {
-            var menu = [{ name: 'Map', link: '#map' }, { name: 'Data', link: '#data' }];
+            var menu = [{ name: 'Описание', link: '#about' }, { name: 'Map', link: '#map' }, { name: 'Data', link: '#data' }];
 
             return _react2.default.createElement(
                 "div",
@@ -28163,7 +28169,7 @@ var Home = function (_Component) {
                     _react2.default.createElement(_Sidebar2.default, { items: menu }),
                     _react2.default.createElement(
                         "section",
-                        { id: "mapapp", style: { marginTop: 64 }, className: "bottommargin-lg" },
+                        { id: "about", style: { marginTop: 64 }, className: "bottommargin-lg" },
                         _react2.default.createElement(
                             "div",
                             { className: "container", style: style.container },
@@ -28173,7 +28179,6 @@ var Home = function (_Component) {
                                 "\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 ",
                                 _index.appName
                             ),
-                            _react2.default.createElement("hr", null),
                             _react2.default.createElement(
                                 "p",
                                 { style: style.paragraph },
@@ -28184,28 +28189,49 @@ var Home = function (_Component) {
                                 { style: style.paragraph },
                                 "\u0421\u043E\u0431\u0440\u0430\u043D\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u0430\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u0443\u0435\u0442\u0441\u044F \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u043C \u0438 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u043A\u0430\u0440\u0442\u0435. \u041F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0442 \u0432 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u043C \u0440\u0435\u0436\u0438\u043C\u0435 \u0430\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0434\u043E\u0440\u043E\u0433."
                             ),
+                            _react2.default.createElement(
+                                "p",
+                                { style: style.paragraph },
+                                "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430: \u041C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0435 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u0441 \u0430\u043A\u0441\u0435\u043B\u0435\u0440\u043E\u043C\u0435\u0442\u0440\u043E\u043C \u043D\u0430 Android, \u0421\u0435\u0440\u0432\u0435\u0440 Java, React JS."
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "section",
+                        { id: "map", style: { marginTop: 64 }, className: "bottommargin-lg" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container", style: style.container },
+                            _react2.default.createElement(
+                                "h2",
+                                null,
+                                "\u041A\u0430\u0440\u0442\u0430"
+                            ),
                             _react2.default.createElement(_Map2.default, {
                                 center: _index.defaultCenter,
-                                streetView: _index.streetViewControl,
                                 zoom: _index.defaultZoom,
                                 containerElement: _react2.default.createElement("div", { style: { height: "500px" } }),
                                 mapElement: _react2.default.createElement("div", { style: { height: 100 + '%' } }),
-                                markers: this.state.points
+                                options: _index.mapOptions
                             })
                         )
                     ),
                     _react2.default.createElement(
                         "section",
-                        { id: "points", style: { marginTop: 64 }, className: "bottommargin-lg" },
+                        { id: "data", style: { marginTop: 64 }, className: "bottommargin-lg" },
                         _react2.default.createElement(
                             "div",
                             { className: "container", style: style.container },
                             _react2.default.createElement(
-                                "h1",
+                                "h2",
                                 null,
-                                "\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u043E \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438"
+                                "\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430"
                             ),
-                            _react2.default.createElement(_Places2.default, { points: this.state.points })
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "\u0417\u0434\u0435\u0441\u044C \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044F \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u043E \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438"
+                            )
                         )
                     )
                 )
@@ -41311,68 +41337,7 @@ module.exports = function shouldRetry(err, res) {
 
 
 /***/ }),
-/* 398 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Places = function (_Component) {
-    _inherits(Places, _Component);
-
-    function Places() {
-        _classCallCheck(this, Places);
-
-        return _possibleConstructorReturn(this, (Places.__proto__ || Object.getPrototypeOf(Places)).apply(this, arguments));
-    }
-
-    _createClass(Places, [{
-        key: 'render',
-        value: function render() {
-            var list = this.props.points.map(function (point, i) {
-                return _react2.default.createElement(
-                    'li',
-                    { key: i },
-                    point.name
-                );
-            });
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'ol',
-                    null,
-                    list
-                )
-            );
-        }
-    }]);
-
-    return Places;
-}(_react.Component);
-
-exports.default = Places;
-
-/***/ }),
+/* 398 */,
 /* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41382,8 +41347,6 @@ exports.default = Places;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -41444,19 +41407,6 @@ var Map = function (_Component) {
         key: 'render',
         value: function render() {
             console.log('kml file url :', { kmlUrl: _index.kmlUrl });
-            // console.log('state :', this.props.markers);
-            var markers = this.props.markers.map(function (venue, i) {
-                // console.log('venue : ', venue);
-                // console.log('i : ', i);
-                var marker = {
-                    position: {
-                        lat: venue.location.lat,
-                        lng: venue.location.lng
-                    }
-                };
-
-                return _react2.default.createElement(_reactGoogleMaps.Marker, _extends({ key: i }, marker));
-            });
 
             return _react2.default.createElement(
                 'div',
@@ -41468,9 +41418,9 @@ var Map = function (_Component) {
                         onDragEnd: this.mapMoved.bind(this),
                         onZoomChanged: this.zoomChanged.bind(this),
                         defaultZoom: this.props.zoom,
-                        defaultCenter: this.props.center
+                        defaultCenter: this.props.center,
+                        defaultOptions: this.props.options
                     },
-                    markers,
                     _react2.default.createElement(_reactGoogleMaps.KmlLayer, {
                         url: _index.kmlUrl,
                         options: { preserveViewport: true }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withGoogleMap, GoogleMap, Marker, KmlLayer} from 'react-google-maps'
-import {kmlUrl} from "../../../constants/index";
+import {defaultCenter, kmlUrl} from "../../../constants/index";
 
 class Map extends Component {
 
@@ -34,19 +34,7 @@ class Map extends Component {
 
     render() {
         console.log('kml file url :', { kmlUrl });
-        // console.log('state :', this.props.markers);
-        const markers = this.props.markers.map((venue, i) => {
-            // console.log('venue : ', venue);
-            // console.log('i : ', i);
-            const marker = {
-                position: {
-                    lat: venue.location.lat,
-                    lng: venue.location.lng
-                }
-            };
 
-            return <Marker key={i} {...marker} />
-        });
 
         return (
             <div>
@@ -56,8 +44,8 @@ class Map extends Component {
                     onZoomChanged={this.zoomChanged.bind(this)}
                     defaultZoom={this.props.zoom}
                     defaultCenter={this.props.center}
+                    defaultOptions = {this.props.options}
                 >
-                    {markers}
                     <KmlLayer
                         url={ kmlUrl }
                         options={{ preserveViewport: true }}

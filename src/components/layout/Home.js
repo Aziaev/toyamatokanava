@@ -3,19 +3,21 @@ import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 import Map from "../custom/Map/Map";
 import superagent from 'superagent'
-import {apiUrl, appName, defaultCenter, defaultZoom, streetViewControl} from "../../constants/index";
-import Places from "./Places";
+import {apiUrl, appName, defaultCenter, defaultZoom, mapOptions} from "../../constants/index";
 
 const style = {
     container: {
-        padding: '0px 64px 32px 260px'
+        padding: '0px 64px 0px 260px'
+    },
+    mapContainer: {
+        padding: '0px 64px 0px 260px'
     },
     subheader: {
         marginBottom: 12
     },
     paragraph: {
         fontSize: 16,
-        marginBottom: 6
+        marginBottom: 10
     }
 }
 
@@ -46,6 +48,7 @@ class Home extends Component {
 
     render() {
         const menu = [
+            {name: 'Описание', link: '#about'},
             {name: 'Map', link: '#map'},
             {name: 'Data', link: '#data'}
         ];
@@ -57,33 +60,39 @@ class Home extends Component {
                 <div>
                     <Sidebar items={menu}/>
 
-                    <section id="mapapp" style={{marginTop: 64}} className="bottommargin-lg">
+                    <section id="about" style={{marginTop: 64}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
                             <h1>Приложение {appName}</h1>
-                            <hr/>
                             <p style={style.paragraph}>
                                 Приложение собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
                             </p>
                             <p style={style.paragraph}>
                                 Собранная информация анализируется сервером и отображается на карте. Полученные данные позволят в автоматическом режиме анализировать состояние дорог.
                             </p>
+                            <p style={style.paragraph}>
+                                Используемые средства: Мобильное устройство с акселерометром на Android, Сервер Java, React JS.
+                            </p>
+                        </div>
+                    </section>
 
+                    <section id="map" style={{marginTop: 64}} className="bottommargin-lg">
+                        <div className="container" style={style.container}>
+                            <h2>Карта</h2>
                             <Map
                                 center={ defaultCenter }
-                                streetView = { streetViewControl }
                                 zoom={ defaultZoom }
                                 containerElement={<div style={{height: `500px`}}/>}
                                 mapElement={<div style={{height: 100 + '%'}}/>}
-                                markers={this.state.points}
+                                options ={mapOptions}
                             />
                         </div>
                     </section>
 
 
-                    <section id="points" style={{marginTop: 64}} className="bottommargin-lg">
+                    <section id="data" style={{marginTop: 64}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
-                            <h1>Статистика по собранной информации</h1>
-                            <Places points = {this.state.points} />
+                            <h2>Статистика</h2>
+                            <p>Здесь отображается статистика по собранной информации</p>
                         </div>
                     </section>
 
