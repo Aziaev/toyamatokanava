@@ -18,7 +18,8 @@ exports["default"] = {
 var apiUrl = exports.apiUrl = "https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F";
 
 // Innopolis
-var kmlUrl = exports.kmlUrl = "http://localhost:8080/kml/cta.kml";
+// export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
+var kmlUrl = exports.kmlUrl = "https://sites.google.com/site/azkmlfile/kml/cta.kml";
 var defaultCenter = exports.defaultCenter = { lat: 55.751586659952075, lng: 48.744511084655784 };
 var defaultZoom = exports.defaultZoom = 14;
 

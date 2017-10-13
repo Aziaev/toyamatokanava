@@ -17,7 +17,8 @@ export default {
 export const apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F';
 
 // Innopolis
-export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
+// export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
+export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
 export const defaultCenter = {"lat":55.751586659952075,"lng":48.744511084655784};
 export const defaultZoom = 14;
 

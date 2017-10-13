@@ -1,7 +1,7 @@
 {
   "meta": {
     "code": 200,
-    "requestId": "59dc06c59fb6b725b20f8ee7"
+    "requestId": "59e0e096db04f548b5b65971"
   },
   "response": {
     "venues": [
@@ -64,7 +64,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556f3bfebd6a8104863bebd1"
@@ -117,7 +117,7 @@
         ],
         "verified": false,
         "stats": {
-          "checkinsCount": 15903,
+          "checkinsCount": 15904,
           "usersCount": 2744,
           "tipCount": 183
         },
@@ -135,7 +135,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556f3b98bd6a8104863bdb93"
@@ -144,25 +144,32 @@
         "hasPerk": false
       },
       {
-        "id": "5392d128498e14bd1c885c84",
-        "name": "Coffee Like",
-        "contact": {},
+        "id": "4d4fe20b9d4937044331bb39",
+        "name": "coffee CAVA",
+        "contact": {
+          "phone": "+78432367178",
+          "formattedPhone": "+7 843 236-71-78"
+        },
         "location": {
-          "address": "Ямашева 76",
-          "lat": 55.829239389168,
-          "lng": 49.118165918599225,
+          "address": "Петербургская 52",
+          "crossStreet": "ИТ-парк",
+          "lat": 55.78032321557049,
+          "lng": 49.13384325193423,
           "labeledLatLngs": [
             {
               "label": "display",
-              "lat": 55.829239389168,
-              "lng": 49.118165918599225
+              "lat": 55.78032321557049,
+              "lng": 49.13384325193423
             }
           ],
-          "distance": 24908,
+          "distance": 24580,
           "cc": "RU",
+          "city": "Казань",
+          "state": "Татарстан",
           "country": "Россия",
           "formattedAddress": [
-            "Ямашева 76",
+            "Петербургская 52 (ИТ-парк)",
+            "Казань",
             "Россия"
           ]
         },
@@ -179,12 +186,13 @@
             "primary": true
           }
         ],
-        "verified": false,
+        "verified": true,
         "stats": {
-          "checkinsCount": 49,
-          "usersCount": 32,
-          "tipCount": 1
+          "checkinsCount": 1826,
+          "usersCount": 338,
+          "tipCount": 15
         },
+        "url": "http:\/\/coffeecava.ru",
         "allowMenuUrlEdit": true,
         "beenHere": {
           "lastCheckinExpiredAt": 0
@@ -193,15 +201,16 @@
           "count": 0,
           "items": []
         },
+        "storeId": "",
         "hereNow": {
           "count": 0,
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
-            "id": "556e5621bd6a82902e289b5e"
+            "id": "556f3bfebd6a8104863bebd1"
           }
         ],
         "hasPerk": false
@@ -259,7 +268,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -323,7 +332,70 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
+        "venueChains": [
+          {
+            "id": "556e5621bd6a82902e289b5e"
+          }
+        ],
+        "hasPerk": false
+      },
+      {
+        "id": "5392d128498e14bd1c885c84",
+        "name": "Coffee Like",
+        "contact": {},
+        "location": {
+          "address": "Ямашева 76",
+          "lat": 55.829239389168,
+          "lng": 49.118165918599225,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.829239389168,
+              "lng": 49.118165918599225
+            }
+          ],
+          "distance": 24908,
+          "cc": "RU",
+          "country": "Россия",
+          "formattedAddress": [
+            "Ямашева 76",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 49,
+          "usersCount": 32,
+          "tipCount": 1
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556e5621bd6a82902e289b5e"
@@ -392,69 +464,8 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "55c49e86498e4eaea5d362cd",
-        "name": "Coffee Like",
-        "contact": {},
-        "location": {
-          "lat": 55.769548,
-          "lng": 49.21771,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.769548,
-              "lng": 49.21771
-            }
-          ],
-          "distance": 29698,
-          "cc": "RU",
-          "country": "Россия",
-          "formattedAddress": [
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 97,
-          "usersCount": 36,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [
-          {
-            "id": "556e5621bd6a82902e289b5e"
-          }
-        ],
         "hasPerk": false
       },
       {
@@ -516,169 +527,28 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
       {
-        "id": "4d4fe20b9d4937044331bb39",
-        "name": "coffee CAVA",
-        "contact": {
-          "phone": "+78432367178",
-          "formattedPhone": "+7 843 236-71-78"
-        },
-        "location": {
-          "address": "Петербургская 52",
-          "crossStreet": "ИТ-парк",
-          "lat": 55.78032321557049,
-          "lng": 49.13384325193423,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.78032321557049,
-              "lng": 49.13384325193423
-            }
-          ],
-          "distance": 24580,
-          "cc": "RU",
-          "city": "Казань",
-          "state": "Татарстан",
-          "country": "Россия",
-          "formattedAddress": [
-            "Петербургская 52 (ИТ-парк)",
-            "Казань",
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": true,
-        "stats": {
-          "checkinsCount": 1826,
-          "usersCount": 338,
-          "tipCount": 15
-        },
-        "url": "http:\/\/coffeecava.ru",
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "storeId": "",
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [
-          {
-            "id": "556f3bfebd6a8104863bebd1"
-          }
-        ],
-        "hasPerk": false
-      },
-      {
-        "id": "59be5ce9b2958f1f515e24e6",
-        "name": "Бинхартс кафе",
-        "contact": {},
-        "location": {
-          "address": "ГУМ",
-          "lat": 55.787872,
-          "lng": 49.122722,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.787872,
-              "lng": 49.122722
-            }
-          ],
-          "distance": 24012,
-          "postalCode": "420000",
-          "cc": "RU",
-          "city": "Kazan",
-          "state": "Republic of Tatarstan",
-          "country": "Россия",
-          "formattedAddress": [
-            "ГУМ",
-            "420000, Kazan",
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 50,
-          "usersCount": 33,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "56cda0f9498e7c490d7dc64c",
+        "id": "55c49e86498e4eaea5d362cd",
         "name": "Coffee Like",
         "contact": {},
         "location": {
-          "address": "МЕГА Казань",
-          "crossStreet": "просп. Победы, 141",
-          "lat": 55.780529,
-          "lng": 49.215483,
+          "lat": 55.769548,
+          "lng": 49.21771,
           "labeledLatLngs": [
             {
               "label": "display",
-              "lat": 55.780529,
-              "lng": 49.215483
+              "lat": 55.769548,
+              "lng": 49.21771
             }
           ],
-          "distance": 29660,
+          "distance": 29698,
           "cc": "RU",
-          "city": "Казань",
-          "state": "Татарстан",
           "country": "Россия",
           "formattedAddress": [
-            "МЕГА Казань (просп. Победы, 141)",
-            "Казань",
             "Россия"
           ]
         },
@@ -697,8 +567,8 @@
         ],
         "verified": false,
         "stats": {
-          "checkinsCount": 30,
-          "usersCount": 23,
+          "checkinsCount": 97,
+          "usersCount": 36,
           "tipCount": 0
         },
         "allowMenuUrlEdit": true,
@@ -714,7 +584,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556e5621bd6a82902e289b5e"
@@ -781,7 +651,194 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "59be5ce9b2958f1f515e24e6",
+        "name": "Бинхартс кафе",
+        "contact": {},
+        "location": {
+          "address": "ГУМ",
+          "lat": 55.787872,
+          "lng": 49.122722,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.787872,
+              "lng": 49.122722
+            }
+          ],
+          "distance": 24012,
+          "postalCode": "420000",
+          "cc": "RU",
+          "city": "Kazan",
+          "state": "Republic of Tatarstan",
+          "country": "Россия",
+          "formattedAddress": [
+            "ГУМ",
+            "420000, Kazan",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 63,
+          "usersCount": 41,
+          "tipCount": 0
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "56cda0f9498e7c490d7dc64c",
+        "name": "Coffee Like",
+        "contact": {},
+        "location": {
+          "address": "МЕГА Казань",
+          "crossStreet": "просп. Победы, 141",
+          "lat": 55.780529,
+          "lng": 49.215483,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.780529,
+              "lng": 49.215483
+            }
+          ],
+          "distance": 29660,
+          "cc": "RU",
+          "city": "Казань",
+          "state": "Татарстан",
+          "country": "Россия",
+          "formattedAddress": [
+            "МЕГА Казань (просп. Победы, 141)",
+            "Казань",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 30,
+          "usersCount": 23,
+          "tipCount": 0
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
+        "venueChains": [
+          {
+            "id": "556e5621bd6a82902e289b5e"
+          }
+        ],
+        "hasPerk": false
+      },
+      {
+        "id": "5889ee8ddebdf63577b46fd2",
+        "name": "coffee&office",
+        "contact": {},
+        "location": {
+          "lat": 55.789911,
+          "lng": 49.11079,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.789911,
+              "lng": 49.11079
+            }
+          ],
+          "distance": 23315,
+          "cc": "RU",
+          "country": "Россия",
+          "formattedAddress": [
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 30,
+          "usersCount": 6,
+          "tipCount": 0
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -849,7 +906,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556f3bfebd6a8104863bebd1"
@@ -858,23 +915,28 @@
         "hasPerk": false
       },
       {
-        "id": "5889ee8ddebdf63577b46fd2",
-        "name": "coffee&office",
+        "id": "55d6ef8c498ec4a70e811bc0",
+        "name": "Coffee Time",
         "contact": {},
         "location": {
-          "lat": 55.789911,
-          "lng": 49.11079,
+          "address": "ул. Профсоюзная, 26",
+          "lat": 55.79089237255738,
+          "lng": 49.11683001144789,
           "labeledLatLngs": [
             {
               "label": "display",
-              "lat": 55.789911,
-              "lng": 49.11079
+              "lat": 55.79089237255738,
+              "lng": 49.11683001144789
             }
           ],
-          "distance": 23315,
+          "distance": 23706,
           "cc": "RU",
+          "city": "Казань",
+          "state": "Татарстан",
           "country": "Россия",
           "formattedAddress": [
+            "ул. Профсоюзная, 26",
+            "Казань",
             "Россия"
           ]
         },
@@ -893,8 +955,8 @@
         ],
         "verified": false,
         "stats": {
-          "checkinsCount": 30,
-          "usersCount": 6,
+          "checkinsCount": 28,
+          "usersCount": 17,
           "tipCount": 0
         },
         "allowMenuUrlEdit": true,
@@ -910,7 +972,64 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "559e79c5498e91d202676886",
+        "name": "coffee&poznik&vodka",
+        "contact": {},
+        "location": {
+          "lat": 55.58837440162031,
+          "lng": 49.02823211363273,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.58837440162031,
+              "lng": 49.02823211363273
+            }
+          ],
+          "distance": 25483,
+          "cc": "RU",
+          "country": "Россия",
+          "formattedAddress": [
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d17f941735",
+            "name": "Кинотеатр",
+            "pluralName": "Кинотеатры",
+            "shortName": "Кинотеатр",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 96,
+          "usersCount": 13,
+          "tipCount": 0
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -973,7 +1092,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -1030,30 +1149,28 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
       {
-        "id": "5718aea0498efa35582c534a",
-        "name": "NEW YORK COFFEE",
+        "id": "55d6fec2498e3ac845ce6faa",
+        "name": "Coffee Like",
         "contact": {},
         "location": {
-          "address": "Большая Красная, 34",
-          "lat": 55.7975574532202,
-          "lng": 49.12229182969545,
+          "lat": 55.79308821116095,
+          "lng": 49.124918124145196,
           "labeledLatLngs": [
             {
               "label": "display",
-              "lat": 55.7975574532202,
-              "lng": 49.12229182969545
+              "lat": 55.79308821116095,
+              "lng": 49.124918124145196
             }
           ],
-          "distance": 24185,
+          "distance": 24249,
           "cc": "RU",
           "country": "Россия",
           "formattedAddress": [
-            "Большая Красная, 34",
             "Россия"
           ]
         },
@@ -1072,8 +1189,8 @@
         ],
         "verified": false,
         "stats": {
-          "checkinsCount": 225,
-          "usersCount": 81,
+          "checkinsCount": 72,
+          "usersCount": 39,
           "tipCount": 0
         },
         "allowMenuUrlEdit": true,
@@ -1089,70 +1206,12 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
-        "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "55d6ef8c498ec4a70e811bc0",
-        "name": "Coffee Time",
-        "contact": {},
-        "location": {
-          "address": "ул. Профсоюзная, 26",
-          "lat": 55.79089237255738,
-          "lng": 49.11683001144789,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.79089237255738,
-              "lng": 49.11683001144789
-            }
-          ],
-          "distance": 23706,
-          "cc": "RU",
-          "city": "Казань",
-          "state": "Татарстан",
-          "country": "Россия",
-          "formattedAddress": [
-            "ул. Профсоюзная, 26",
-            "Казань",
-            "Россия"
-          ]
-        },
-        "categories": [
+        "referralId": "v-1507909782",
+        "venueChains": [
           {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
+            "id": "556e5621bd6a82902e289b5e"
           }
         ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 28,
-          "usersCount": 17,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [],
         "hasPerk": false
       },
       {
@@ -1210,7 +1269,69 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4c5e49ca9b28d13a26395c70",
+        "name": "Coffee time",
+        "contact": {},
+        "location": {
+          "address": "пл. Тукая",
+          "lat": 55.787649693408355,
+          "lng": 49.121572770282135,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.787649693408355,
+              "lng": 49.121572770282135
+            }
+          ],
+          "distance": 23937,
+          "cc": "RU",
+          "city": "город Казань",
+          "state": "Татарстан",
+          "country": "Россия",
+          "formattedAddress": [
+            "пл. Тукая",
+            "город Казань",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 17,
+          "usersCount": 15,
+          "tipCount": 3
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -1272,187 +1393,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
-        "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "55d6fec2498e3ac845ce6faa",
-        "name": "Coffee Like",
-        "contact": {},
-        "location": {
-          "lat": 55.79308821116095,
-          "lng": 49.124918124145196,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.79308821116095,
-              "lng": 49.124918124145196
-            }
-          ],
-          "distance": 24249,
-          "cc": "RU",
-          "country": "Россия",
-          "formattedAddress": [
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 72,
-          "usersCount": 39,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [
-          {
-            "id": "556e5621bd6a82902e289b5e"
-          }
-        ],
-        "hasPerk": false
-      },
-      {
-        "id": "4c5e49ca9b28d13a26395c70",
-        "name": "Coffee time",
-        "contact": {},
-        "location": {
-          "address": "пл. Тукая",
-          "lat": 55.787649693408355,
-          "lng": 49.121572770282135,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.787649693408355,
-              "lng": 49.121572770282135
-            }
-          ],
-          "distance": 23937,
-          "cc": "RU",
-          "city": "город Казань",
-          "state": "Татарстан",
-          "country": "Россия",
-          "formattedAddress": [
-            "пл. Тукая",
-            "город Казань",
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 17,
-          "usersCount": 15,
-          "tipCount": 3
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
-        "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "559e79c5498e91d202676886",
-        "name": "coffee&poznik&vodka",
-        "contact": {},
-        "location": {
-          "lat": 55.58837440162031,
-          "lng": 49.02823211363273,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.58837440162031,
-              "lng": 49.02823211363273
-            }
-          ],
-          "distance": 25483,
-          "cc": "RU",
-          "country": "Россия",
-          "formattedAddress": [
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d17f941735",
-            "name": "Кинотеатр",
-            "pluralName": "Кинотеатры",
-            "shortName": "Кинотеатр",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 96,
-          "usersCount": 13,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -1512,7 +1453,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -1575,7 +1516,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556e5621bd6a82902e289b5e"
@@ -1642,38 +1583,30 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
       {
-        "id": "55324328498e4134d6b0d002",
-        "name": "Coca Coffee Creative Place",
-        "contact": {
-          "phone": "+78432515160",
-          "formattedPhone": "+7 843 251-51-60"
-        },
+        "id": "5718aea0498efa35582c534a",
+        "name": "NEW YORK COFFEE",
+        "contact": {},
         "location": {
-          "address": "Карла Маркса, 54",
-          "crossStreet": "Карла Маркса\/Гоголя",
-          "lat": 55.79543113883021,
-          "lng": 49.132120013237,
+          "address": "Большая Красная, 34",
+          "lat": 55.7975574532202,
+          "lng": 49.12229182969545,
           "labeledLatLngs": [
             {
               "label": "display",
-              "lat": 55.79543113883021,
-              "lng": 49.132120013237
+              "lat": 55.7975574532202,
+              "lng": 49.12229182969545
             }
           ],
-          "distance": 24740,
-          "postalCode": "420070",
+          "distance": 24185,
           "cc": "RU",
-          "city": "Казань",
-          "state": "Татарстан",
           "country": "Россия",
           "formattedAddress": [
-            "Карла Маркса, 54 (Карла Маркса\/Гоголя)",
-            "420070, Казань",
+            "Большая Красная, 34",
             "Россия"
           ]
         },
@@ -1690,11 +1623,11 @@
             "primary": true
           }
         ],
-        "verified": true,
+        "verified": false,
         "stats": {
-          "checkinsCount": 71,
-          "usersCount": 29,
-          "tipCount": 42
+          "checkinsCount": 225,
+          "usersCount": 81,
+          "tipCount": 0
         },
         "allowMenuUrlEdit": true,
         "beenHere": {
@@ -1704,15 +1637,152 @@
           "count": 0,
           "items": []
         },
-        "venuePage": {
-          "id": "126577076"
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "53983778498e056d3d02fbd0",
+        "name": "Costa Coffee",
+        "contact": {},
+        "location": {
+          "address": "Аэропорт",
+          "lat": 55.648777094718,
+          "lng": 49.29100259200934,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.648777094718,
+              "lng": 49.29100259200934
+            }
+          ],
+          "distance": 36157,
+          "cc": "RU",
+          "country": "Россия",
+          "formattedAddress": [
+            "Аэропорт",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 8,
+          "usersCount": 8,
+          "tipCount": 1
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
         },
         "hereNow": {
           "count": 0,
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
+        "venueChains": [
+          {
+            "id": "5569efbaa7c8896abe7bf070"
+          }
+        ],
+        "hasPerk": false
+      },
+      {
+        "id": "578f105acd109e0f7f062f49",
+        "name": "Бинхартс Кофе",
+        "contact": {
+          "phone": "+78432964717",
+          "formattedPhone": "+7 843 296-47-17",
+          "facebook": "126415047795976",
+          "facebookName": "Beanhearts Coffee, Бинхартс Кофе"
+        },
+        "location": {
+          "address": "ул. Островского, 38",
+          "lat": 55.78520282327354,
+          "lng": 49.12217294152095,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 55.78520282327354,
+              "lng": 49.12217294152095
+            }
+          ],
+          "distance": 23931,
+          "postalCode": "420107",
+          "cc": "RU",
+          "city": "Казань",
+          "state": "Татарстан",
+          "country": "Россия",
+          "formattedAddress": [
+            "ул. Островского, 38",
+            "420107, Казань",
+            "Россия"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e0931735",
+            "name": "Кофейня",
+            "pluralName": "Кофейни",
+            "shortName": "Кофейня",
+            "icon": {
+              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 2531,
+          "usersCount": 695,
+          "tipCount": 39
+        },
+        "url": "http:\/\/beanhearts.ru",
+        "menu": {
+          "type": "Menu",
+          "label": "Меню",
+          "anchor": "Просмотреть меню",
+          "url": "https:\/\/vk.com\/beanhearts_kazan?z=album-125537318_234219790",
+          "mobileUrl": "https:\/\/vk.com\/beanhearts_kazan?z=album-125537318_234219790",
+          "externalUrl": "https:\/\/vk.com\/beanhearts_kazan?z=album-125537318_234219790"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Здесь никого нет",
+          "groups": []
+        },
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       },
@@ -1773,7 +1843,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [
           {
             "id": "556e5621bd6a82902e289b5e"
@@ -1842,70 +1912,7 @@
           "summary": "Здесь никого нет",
           "groups": []
         },
-        "referralId": "v-1507591877",
-        "venueChains": [],
-        "hasPerk": false
-      },
-      {
-        "id": "5766de0c38faa6616366f795",
-        "name": "COFFEE MOTORS yummy stop",
-        "contact": {},
-        "location": {
-          "address": "Хусаина Ямашева проспект",
-          "lat": 55.820587,
-          "lng": 49.156319,
-          "labeledLatLngs": [
-            {
-              "label": "display",
-              "lat": 55.820587,
-              "lng": 49.156319
-            }
-          ],
-          "distance": 26876,
-          "postalCode": "420000",
-          "cc": "RU",
-          "city": "Казань",
-          "state": "Татарстан",
-          "country": "Россия",
-          "formattedAddress": [
-            "Хусаина Ямашева проспект",
-            "420000, Казань",
-            "Россия"
-          ]
-        },
-        "categories": [
-          {
-            "id": "4bf58dd8d48988d1e0931735",
-            "name": "Кофейня",
-            "pluralName": "Кофейни",
-            "shortName": "Кофейня",
-            "icon": {
-              "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/coffeeshop_",
-              "suffix": ".png"
-            },
-            "primary": true
-          }
-        ],
-        "verified": false,
-        "stats": {
-          "checkinsCount": 12,
-          "usersCount": 7,
-          "tipCount": 0
-        },
-        "allowMenuUrlEdit": true,
-        "beenHere": {
-          "lastCheckinExpiredAt": 0
-        },
-        "specials": {
-          "count": 0,
-          "items": []
-        },
-        "hereNow": {
-          "count": 0,
-          "summary": "Здесь никого нет",
-          "groups": []
-        },
-        "referralId": "v-1507591877",
+        "referralId": "v-1507909782",
         "venueChains": [],
         "hasPerk": false
       }
