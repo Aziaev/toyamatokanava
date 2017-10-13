@@ -60,11 +60,18 @@ class Home extends Component {
                 <div>
                     <Sidebar items={menu}/>
 
+                    <section style={{marginTop: 64, textAlign: 'center'}} className="bottommargin-lg">
+                        <div className="container" style={style.container}>
+                            <h1>Сервис {appName}</h1>
+                            <hr />
+                        </div>
+                    </section>
+
                     <section id="about" style={{marginTop: 64}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
-                            <h1>Приложение {appName}</h1>
+                            <h2>Описание</h2>
                             <p style={style.paragraph}>
-                                Приложение собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
+                                Сервис собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
                             </p>
                             <p style={style.paragraph}>
                                 Собранная информация анализируется сервером и отображается на карте. Полученные данные позволят в автоматическом режиме анализировать состояние дорог.

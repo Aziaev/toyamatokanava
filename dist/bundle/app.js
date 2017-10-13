@@ -28169,20 +28169,34 @@ var Home = function (_Component) {
                     _react2.default.createElement(_Sidebar2.default, { items: menu }),
                     _react2.default.createElement(
                         "section",
-                        { id: "about", style: { marginTop: 64 }, className: "bottommargin-lg" },
+                        { style: { marginTop: 64, textAlign: 'center' }, className: "bottommargin-lg" },
                         _react2.default.createElement(
                             "div",
                             { className: "container", style: style.container },
                             _react2.default.createElement(
                                 "h1",
                                 null,
-                                "\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 ",
+                                "\u0421\u0435\u0440\u0432\u0438\u0441 ",
                                 _index.appName
+                            ),
+                            _react2.default.createElement("hr", null)
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "section",
+                        { id: "about", style: { marginTop: 64 }, className: "bottommargin-lg" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "container", style: style.container },
+                            _react2.default.createElement(
+                                "h2",
+                                null,
+                                "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
                             ),
                             _react2.default.createElement(
                                 "p",
                                 { style: style.paragraph },
-                                "\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0441\u043E\u0431\u0438\u0440\u0430\u0435\u0442 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438 \u0434\u043E\u0440\u043E\u0433 \u043F\u043E \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442\u0430\u043C GPS/\u0413\u043B\u043E\u043D\u0430\u0441\u0441 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043F\u043E\u043A\u0430\u0437\u0430\u043D\u0438\u0439 \u0432\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0430\u043A\u0441\u0435\u043B\u0435\u0440\u043E\u043C\u0435\u0442\u0440\u0430 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0433\u043E \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u0432 \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u0435."
+                                "\u0421\u0435\u0440\u0432\u0438\u0441 \u0441\u043E\u0431\u0438\u0440\u0430\u0435\u0442 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438 \u0434\u043E\u0440\u043E\u0433 \u043F\u043E \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442\u0430\u043C GPS/\u0413\u043B\u043E\u043D\u0430\u0441\u0441 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043F\u043E\u043A\u0430\u0437\u0430\u043D\u0438\u0439 \u0432\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0430\u043A\u0441\u0435\u043B\u0435\u0440\u043E\u043C\u0435\u0442\u0440\u0430 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0433\u043E \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u0432 \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u0435."
                             ),
                             _react2.default.createElement(
                                 "p",
@@ -28278,7 +28292,11 @@ exports.default = function (props) {
                     "div",
                     { style: { fontFamily: 'Pathway Gothic One', fontSize: 30, fontWeight: 100 },
                         className: "menu-title" },
-                    _index.appName
+                    _react2.default.createElement(
+                        "a",
+                        { style: { color: '#fff' }, href: "/" },
+                        _index.appName
+                    )
                 ),
                 _react2.default.createElement("nav", { className: "one-page-menu" }),
                 _react2.default.createElement(
