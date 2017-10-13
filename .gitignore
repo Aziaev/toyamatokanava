@@ -1,0 +1,39 @@
+/node_modules/
+DOCUMENTATION.md
+
+# dependencies
+npm-debug.log
+coverage
+development/routes.dev.js
+app/**/*.js
+app/**/*.js.map
+
+*.css.d.ts
+*.scss.d.ts
+*.zip
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### IntelliJ IDEA ###
+.mvn/wrapper
+*.iws
+*.iml
+*.ipr
+*.sh
+*.cmd
+.idea
+/.idea
+**/.idea/workspace.xml
+/.idea/
+.idea/workspace.xml
