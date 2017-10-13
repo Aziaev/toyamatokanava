@@ -20,9 +20,12 @@ export const apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll
 // export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
 export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
 export const defaultCenter = {"lat":55.751586659952075,"lng":48.744511084655784};
-export const defaultZoom = 14;
+export const defaultZoom = 15;
 
 //Chicago example
 // export const kmlUrl ='http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml';
 // export const defaultCenter = {"lat":41.83513710922671,"lng":-87.60401777734377};
 // export const defaultZoom = 9;
+
+export const appName = 'toyamatokanava';
+export const streetViewControl = false;

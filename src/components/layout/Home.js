@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
-import Map from "../custom/Map";
+import Map from "../custom/Map/Map";
 import superagent from 'superagent'
-import {apiUrl, defaultCenter, defaultZoom} from "../../constants/index";
+import {apiUrl, appName, defaultCenter, defaultZoom, streetViewControl} from "../../constants/index";
 import Places from "./Places";
 
 const style = {
@@ -46,8 +46,8 @@ class Home extends Component {
 
     render() {
         const menu = [
-            {name: 'Map', link: '#mapapp'},
-            {name: 'Points', link: '#points'}
+            {name: 'Map', link: '#map'},
+            {name: 'Data', link: '#data'}
         ];
 
         return (
@@ -59,13 +59,18 @@ class Home extends Component {
 
                     <section id="mapapp" style={{marginTop: 64}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
-                            <h1>Map App</h1>
+                            <h1>Приложение {appName}</h1>
                             <hr/>
                             <p style={style.paragraph}>
-                                SEARCH FORM SHOULD BE ADDED!!!
+                                Приложение собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
                             </p>
+                            <p style={style.paragraph}>
+                                Собранная информация анализируется сервером и отображается на карте. Полученные данные позволят в автоматическом режиме анализировать состояние дорог.
+                            </p>
+
                             <Map
                                 center={ defaultCenter }
+                                streetView = { streetViewControl }
                                 zoom={ defaultZoom }
                                 containerElement={<div style={{height: `500px`}}/>}
                                 mapElement={<div style={{height: 100 + '%'}}/>}
@@ -77,6 +82,7 @@ class Home extends Component {
 
                     <section id="points" style={{marginTop: 64}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
+                            <h1>Статистика по собранной информации</h1>
                             <Places points = {this.state.points} />
                         </div>
                     </section>

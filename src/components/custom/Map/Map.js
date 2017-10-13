@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withGoogleMap, GoogleMap, Marker, KmlLayer} from 'react-google-maps'
-import {kmlUrl} from "../../constants/index";
+import {kmlUrl} from "../../../constants/index";
 
 class Map extends Component {
 
@@ -49,7 +49,7 @@ class Map extends Component {
         });
 
         return (
-            <div>Map component
+            <div>
                 <GoogleMap
                     ref={this.mapLoaded.bind(this)}
                     onDragEnd={this.mapMoved.bind(this)}

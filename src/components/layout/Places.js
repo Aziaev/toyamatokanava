@@ -10,11 +10,9 @@ class Places extends Component {
 
         return (
             <div>
-                <h1>Points</h1>
                 <ol>
                     {list}
                 </ol>
-
             </div>
         )
     }
