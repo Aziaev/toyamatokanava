@@ -1379,12 +1379,16 @@ exports.default = {
     CURRENT_USER_RECEIVED: 'CURRENT_USER_RECEIVED'
 
 };
-var apiUrl = exports.apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F';
+var apiUrl = exports.apiUrl = 'http://31.13.134.171:8080/yamakanava/getkml';
+// export const apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F';
 
 // Innopolis
-// export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
-// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
-var kmlUrl = exports.kmlUrl = 'http://93.170.123.58:8090/kml/cta.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/link04.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta2.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/road.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/singleline.kml';
+// export const kmlUrl = 'http://93.170.123.58:8090/kml/cta.kml';
+var kmlUrl = exports.kmlUrl = 'http://31.13.134.171:8090/kml/';
 var defaultCenter = exports.defaultCenter = { "lat": 55.751586659952075, "lng": 48.744511084655784 };
 var defaultZoom = exports.defaultZoom = 15;
 
@@ -1395,7 +1399,6 @@ var defaultZoom = exports.defaultZoom = 15;
 
 // Settings
 var appName = exports.appName = 'toyamatokanava';
-var disableDefaultUI = exports.disableDefaultUI = true;
 var mapOptions = exports.mapOptions = {
     streetViewControl: false,
     fullscreenControl: false,
@@ -28092,7 +28095,7 @@ var _Sidebar = __webpack_require__(201);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-var _Map = __webpack_require__(399);
+var _Map = __webpack_require__(202);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -28141,18 +28144,23 @@ var Home = function (_Component) {
     }
 
     _createClass(Home, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
+        key: "componentWillMount",
+        value: function componentWillMount() {
             var _this2 = this;
 
-            console.log('Component did mount');
-
-            _superagent2.default.get(_index.apiUrl).query(null).set('Accept', 'text/json').end(function (error, response) {
-                var points = response.body.response.venues;
+            console.log('Component will mount');
+            _superagent2.default.get(_index.apiUrl).query(null).set('Accept', 'application/json').end(function (error, response) {
+                console.log('response', JSON.stringify(response.body.fileName));
+                var fileName = response.body.fileName;
                 _this2.setState({
-                    points: points
+                    fileName: fileName
                 });
             });
+        }
+    }, {
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            console.log('Component did mount');
         }
     }, {
         key: "render",
@@ -28226,7 +28234,8 @@ var Home = function (_Component) {
                                 zoom: _index.defaultZoom,
                                 containerElement: _react2.default.createElement("div", { style: { height: "500px" } }),
                                 mapElement: _react2.default.createElement("div", { style: { height: 100 + '%' } }),
-                                options: _index.mapOptions
+                                options: _index.mapOptions,
+                                fileName: this.state.fileName
                             })
                         )
                     ),
@@ -28373,7 +28382,106 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 202 */,
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactGoogleMaps = __webpack_require__(203);
+
+var _index = __webpack_require__(36);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Map = function (_Component) {
+    _inherits(Map, _Component);
+
+    function Map() {
+        _classCallCheck(this, Map);
+
+        var _this = _possibleConstructorReturn(this, (Map.__proto__ || Object.getPrototypeOf(Map)).call(this));
+
+        _this.state = {
+            map: null
+        };
+        return _this;
+    }
+
+    _createClass(Map, [{
+        key: 'mapMoved',
+        value: function mapMoved() {
+            console.log('mapMoved: ' + JSON.stringify(this.state.map.getCenter()));
+        }
+    }, {
+        key: 'mapLoaded',
+        value: function mapLoaded(map) {
+            if (this.state.map != null) return;
+
+            this.setState({
+                map: map
+            });
+
+            console.log('mapLoaded: ' + JSON.stringify(map.getCenter()));
+        }
+    }, {
+        key: 'zoomChanged',
+        value: function zoomChanged() {
+            console.log('zoom changed: ' + JSON.stringify(this.state.map.getZoom()));
+            console.log('window.innerWidth' + JSON.stringify(window.innerWidth));
+            console.log('window.innerHeight' + JSON.stringify(window.innerHeight));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var fileName = this.props.fileName;
+            console.log('kml file url :', { kmlUrl: _index.kmlUrl });
+            console.log('kml file name :', fileName);
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactGoogleMaps.GoogleMap,
+                    {
+                        ref: this.mapLoaded.bind(this),
+                        onDragEnd: this.mapMoved.bind(this),
+                        onZoomChanged: this.zoomChanged.bind(this),
+                        defaultZoom: this.props.zoom,
+                        defaultCenter: this.props.center,
+                        defaultOptions: this.props.options
+                    },
+                    _react2.default.createElement(_reactGoogleMaps.KmlLayer, {
+                        url: _index.kmlUrl + this.props.fileName,
+                        options: { preserveViewport: true }
+                    })
+                )
+            );
+        }
+    }]);
+
+    return Map;
+}(_react.Component);
+
+exports.default = (0, _reactGoogleMaps.withGoogleMap)(Map);
+
+/***/ }),
 /* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41353,105 +41461,6 @@ module.exports = function shouldRetry(err, res) {
   return false;
 };
 
-
-/***/ }),
-/* 398 */,
-/* 399 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactGoogleMaps = __webpack_require__(203);
-
-var _index = __webpack_require__(36);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Map = function (_Component) {
-    _inherits(Map, _Component);
-
-    function Map() {
-        _classCallCheck(this, Map);
-
-        var _this = _possibleConstructorReturn(this, (Map.__proto__ || Object.getPrototypeOf(Map)).call(this));
-
-        _this.state = {
-            map: null
-        };
-        return _this;
-    }
-
-    _createClass(Map, [{
-        key: 'mapMoved',
-        value: function mapMoved() {
-            console.log('mapMoved: ' + JSON.stringify(this.state.map.getCenter()));
-        }
-    }, {
-        key: 'mapLoaded',
-        value: function mapLoaded(map) {
-            if (this.state.map != null) return;
-
-            this.setState({
-                map: map
-            });
-
-            console.log('mapLoaded: ' + JSON.stringify(map.getCenter()));
-        }
-    }, {
-        key: 'zoomChanged',
-        value: function zoomChanged() {
-            console.log('zoom changed: ' + JSON.stringify(this.state.map.getZoom()));
-            console.log('window.innerWidth' + JSON.stringify(window.innerWidth));
-            console.log('window.innerHeight' + JSON.stringify(window.innerHeight));
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            console.log('kml file url :', { kmlUrl: _index.kmlUrl });
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    _reactGoogleMaps.GoogleMap,
-                    {
-                        ref: this.mapLoaded.bind(this),
-                        onDragEnd: this.mapMoved.bind(this),
-                        onZoomChanged: this.zoomChanged.bind(this),
-                        defaultZoom: this.props.zoom,
-                        defaultCenter: this.props.center,
-                        defaultOptions: this.props.options
-                    },
-                    _react2.default.createElement(_reactGoogleMaps.KmlLayer, {
-                        url: _index.kmlUrl,
-                        options: { preserveViewport: true }
-                    })
-                )
-            );
-        }
-    }]);
-
-    return Map;
-}(_react.Component);
-
-exports.default = (0, _reactGoogleMaps.withGoogleMap)(Map);
 
 /***/ })
 ],[156]);

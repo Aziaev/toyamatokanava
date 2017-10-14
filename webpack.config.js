@@ -61,17 +61,7 @@ module.exports = {
 					publicPath: (config.server) ? '/' : 'dist/',
 					useRelativePath: false
 				}				
-			},
-            {
-                test: /\.(html)$/,
-                loader: 'file-loader',
-                query: {
-                    name: '[name].[ext]',
-                    outputPath: '/',
-                    publicPath: (config.server) ? '/' : 'dist/',
-                    useRelativePath: false
-                }
-            }
+			}
 		]
 	}
 }

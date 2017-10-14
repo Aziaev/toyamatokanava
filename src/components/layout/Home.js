@@ -22,28 +22,30 @@ const style = {
 }
 
 class Home extends Component {
-    constructor(){
+    constructor() {
         super();
         this.state = {
             points: []
         }
     }
 
-    componentDidMount() {
-        console.log('Component did mount');
-
+    componentWillMount() {
+        console.log('Component will mount');
         superagent
             .get(apiUrl)
             .query(null)
-            .set('Accept', 'text/json')
+            .set('Accept', 'application/json')
             .end((error, response) => {
-                const points = response.body.response.venues;
+                console.log('response', JSON.stringify(response.body.fileName));
+                const fileName = response.body.fileName;
                 this.setState({
-                    points: points
+                    fileName: fileName
                 })
             })
+    }
 
-
+    componentDidMount() {
+        console.log('Component did mount');
     }
 
     render() {
@@ -63,7 +65,7 @@ class Home extends Component {
                     <section style={{marginTop: 64, textAlign: 'center'}} className="bottommargin-lg">
                         <div className="container" style={style.container}>
                             <h1>Сервис {appName}</h1>
-                            <hr />
+                            <hr/>
                         </div>
                     </section>
 
@@ -71,13 +73,16 @@ class Home extends Component {
                         <div className="container" style={style.container}>
                             <h2>Описание</h2>
                             <p style={style.paragraph}>
-                                Сервис собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
+                                Сервис собирает информацию о состоянии дорог по координатам GPS/Глонасс с использованием
+                                показаний встроенного акселерометра мобильного устройства установленного в автомобиле.
                             </p>
                             <p style={style.paragraph}>
-                                Собранная информация анализируется сервером и отображается на карте. Полученные данные позволят в автоматическом режиме анализировать состояние дорог.
+                                Собранная информация анализируется сервером и отображается на карте. Полученные данные
+                                позволят в автоматическом режиме анализировать состояние дорог.
                             </p>
                             <p style={style.paragraph}>
-                                Используемые средства: Мобильное устройство с акселерометром на Android, Сервер Java, React JS.
+                                Используемые средства: Мобильное устройство с акселерометром на Android, Сервер Java,
+                                React JS.
                             </p>
                         </div>
                     </section>
@@ -86,11 +91,12 @@ class Home extends Component {
                         <div className="container" style={style.container}>
                             <h2>Карта</h2>
                             <Map
-                                center={ defaultCenter }
-                                zoom={ defaultZoom }
+                                center={defaultCenter}
+                                zoom={defaultZoom}
                                 containerElement={<div style={{height: `500px`}}/>}
                                 mapElement={<div style={{height: 100 + '%'}}/>}
-                                options ={mapOptions}
+                                options={mapOptions}
+                                fileName={this.state.fileName}
                             />
                         </div>
                     </section>

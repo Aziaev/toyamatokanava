@@ -14,12 +14,16 @@ export default {
 
 }
 
-export const apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F';
+export const apiUrl = 'http://31.13.134.171:8080/yamakanava/getkml';
+// export const apiUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=55.752118%2C%2048.744554&query=coffee&intent=checkin&client_id=RMLIGNFC2NYJNV0W4XV1XCQC3KX3FOZXGJKQYOI0CELC21UY&client_secret=SPOM4AE2FDX3E44RZSQX35RFCKNRMFCT1SAH55NNFKA0UO3F';
 
 // Innopolis
-// export const kmlUrl = 'http://localhost:8080/kml/cta.kml';
-// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta.kml';
-export const kmlUrl = 'http://93.170.123.58:8090/kml/cta.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/link04.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/cta2.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/road.kml';
+// export const kmlUrl = 'https://sites.google.com/site/azkmlfile/kml/singleline.kml';
+// export const kmlUrl = 'http://93.170.123.58:8090/kml/cta.kml';
+export const kmlUrl = 'http://31.13.134.171:8090/kml/';
 export const defaultCenter = {"lat":55.751586659952075,"lng":48.744511084655784};
 export const defaultZoom = 15;
 
@@ -30,7 +34,6 @@ export const defaultZoom = 15;
 
 // Settings
 export const appName = 'toyamatokanava';
-export const disableDefaultUI = true;
 export const mapOptions = {
     streetViewControl : false,
     fullscreenControl: false,

@@ -39,11 +39,6 @@ var Places = (function (Component) {
                     "div",
                     null,
                     React.createElement(
-                        "h1",
-                        null,
-                        "Points"
-                    ),
-                    React.createElement(
                         "ol",
                         null,
                         list

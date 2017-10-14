@@ -33,7 +33,9 @@ class Map extends Component {
     }
 
     render() {
+        const fileName = this.props.fileName;
         console.log('kml file url :', { kmlUrl });
+        console.log('kml file name :', fileName );
 
 
         return (
@@ -47,7 +49,7 @@ class Map extends Component {
                     defaultOptions = {this.props.options}
                 >
                     <KmlLayer
-                        url={ kmlUrl }
+                        url={ kmlUrl + this.props.fileName }
                         options={{ preserveViewport: true }}
                     />
                 </GoogleMap>
